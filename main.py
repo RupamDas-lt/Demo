@@ -43,7 +43,7 @@ class FirstSampleTest(unittest.TestCase):
         driver.set_page_load_timeout(30)
         driver.set_window_size(1920, 1080)
 
-        driver.get("file:///Users/")
+        driver.get("file:///C:/Users/")
         driver.implicitly_wait(20)
 
         driver.get("http://localhost:8000/")
