@@ -43,6 +43,9 @@ class FirstSampleTest(unittest.TestCase):
         driver.set_page_load_timeout(30)
         driver.set_window_size(1920, 1080)
 
+        driver.get("http://localhost:8000/")
+        driver.implicitly_wait(20)
+
         # Url
         print('Loading URL')
         driver.get("https://stage-lambda-devops-use-only.lambdatestinternal.com/To-do-app/index.html")
