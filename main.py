@@ -1,4 +1,4 @@
-
+import time
 import unittest
 import os
 from selenium import webdriver
@@ -62,6 +62,7 @@ class FirstSampleTest(unittest.TestCase):
         location = driver.find_element(By.NAME, "li2")
         location.click()
         print("Clicked on the second element")
+        time.sleep(60)
 
         #Take Smart UI screenshot
         #driver.execute_script("smartui.takeScreenshot")
