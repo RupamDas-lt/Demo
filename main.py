@@ -20,9 +20,9 @@ class FirstSampleTest(unittest.TestCase):
         lt_options["project"] = "Untitled";
         lt_options["w3c"] = True;
         lt_options["plugin"] = "python-python";
-        lt_options["tunnel"] = True;
+        # lt_options["tunnel"] = True;
         # lt_options["tunnelName"] = os.getenv("LT_TUNNEL_NAME");
-        lt_options["tunnelName"] = "rupamd";
+        # lt_options["tunnelName"] = "rupamd";
         options.set_capability('LT:Options', lt_options);
 
         self.driver = webdriver.Remote(
@@ -44,11 +44,11 @@ class FirstSampleTest(unittest.TestCase):
         driver.set_page_load_timeout(30)
         driver.set_window_size(1920, 1080)
 
-        driver.get("file:///C:/Users/")
-        driver.implicitly_wait(20)
+        # driver.get("file:///C:/Users/")
+        # driver.implicitly_wait(20)
 
-        driver.get("http://localhost:8000/")
-        driver.implicitly_wait(20)
+        # driver.get("http://localhost:8000/")
+        # driver.implicitly_wait(20)
 
         # Url
         print('Loading URL')
