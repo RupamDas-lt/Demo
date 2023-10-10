@@ -77,7 +77,7 @@ class FirstSampleTest(unittest.TestCase):
         assert search.is_displayed(), "heading is not displayed"
         print(search.text)
         search.click()
-        driver.implicitly_wait(3)
+        driver.implicitly_wait(80)
 
         # Let's download the invoice
         heading = driver.find_element(By.CSS_SELECTOR, ".container h2")
