@@ -20,6 +20,7 @@ class FirstSampleTest(unittest.TestCase):
         lt_options["project"] = "Untitled";
         lt_options["w3c"] = True;
         lt_options["plugin"] = "python-python";
+        lt_options["build"] = "jenkins-test-build";
         # lt_options["tunnel"] = True;
         # lt_options["tunnelName"] = os.getenv("LT_TUNNEL_NAME");
         # lt_options["tunnelName"] = "rupamd";
