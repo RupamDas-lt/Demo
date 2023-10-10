@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 
 username = os.getenv("LT_USERNAME")  # Replace the username
 access_key = os.getenv("LT_ACCESS_KEY")  # Replace the access key
+build_name = os.getenv("LT_BUILD_NAME")
 # username = "rupamd"
 # access_key = "g8bSPewKA2UPOBkcfGMcv1Vmc8N9CM11gIDUUyL9q9a8OpxUwc"
 
@@ -20,7 +21,7 @@ class FirstSampleTest(unittest.TestCase):
         lt_options["project"] = "Untitled";
         lt_options["w3c"] = True;
         lt_options["plugin"] = "python-python";
-        lt_options["build"] = "jenkins-test-build";
+        lt_options["build"] = build_name;
         # lt_options["tunnel"] = True;
         # lt_options["tunnelName"] = os.getenv("LT_TUNNEL_NAME");
         # lt_options["tunnelName"] = "rupamd";
