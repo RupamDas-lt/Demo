@@ -14,8 +14,9 @@ class FirstSampleTest(unittest.TestCase):
     def setUp(self):
         options = webdriver.ChromeOptions();
         options.browser_version = "117.0"
-        options.platform_name = "macOS Sonoma";
+        # options.platform_name = "macOS Sonoma";
         lt_options = {};
+        lt_options["platformName"]="macOS Sonoma";
         lt_options["username"] = "rupamd";
         lt_options["accessKey"] = "g8bSPewKA2UPOBkcfGMcv1Vmc8N9CM11gIDUUyL9q9a8OpxUwc";
         lt_options["project"] = "Untitled";
