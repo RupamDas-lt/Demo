@@ -23,9 +23,8 @@ class FirstSampleTest(unittest.TestCase):
         lt_options["plugin"] = "python-python";
         lt_options["build"] = build_name;
         lt_options["name"] = "rupamd";
-        lt_options["tunnel"] = "true";
-        lt_options["tunnelName"] = os.getenv("LT_TUNNEL_NAME");
-        # lt_options["tunnelName"] = "rupamd";
+        # lt_options["tunnel"] = "true";
+        # lt_options["tunnelName"] = os.getenv("LT_TUNNEL_NAME");
         options.set_capability('LT:Options', lt_options);
 
         self.driver = webdriver.Remote(
