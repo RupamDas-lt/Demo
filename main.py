@@ -51,8 +51,8 @@ class FirstSampleTest(unittest.TestCase):
         # driver.get("file:///C:/Users/")
         # driver.implicitly_wait(20)
 
-        # driver.get("http://localhost:8000/")
-        # driver.implicitly_wait(20)
+        driver.get("http://localhost:8000/")
+        driver.implicitly_wait(5)
 
         # Url
         print('Loading URL')
